@@ -1,11 +1,10 @@
-import React from 'react'
+import React,{useState} from 'react'
 import { StyleSheet, Text, View,ImageBackground,Image,TouchableOpacity } from 'react-native'
 import  styles from './styles'
-
  import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome'
- import { faCog, faFan, faKey, faLock, faToolbox } from '@fortawesome/free-solid-svg-icons'
-
+ import { faCog, faFan, faKey, faLock, faToolbox,  faUnlockAlt } from '@fortawesome/free-solid-svg-icons'
 export default function CarItem() {
+    const[locked,setLocked]=useState(false)
     return (
         <View style={styles.carContainer}>
             <ImageBackground source={require("../../images/background.png")}
@@ -50,9 +49,9 @@ export default function CarItem() {
                 <FontAwesomeIcon icon={ faKey } size={24} style={styles.icon} /> 
                 </View>
                 </TouchableOpacity>
-                <TouchableOpacity>
+                <TouchableOpacity onPress={()=>setLocked(!locked)}>
                 <View style={styles.controlsButton}>
-                <FontAwesomeIcon icon={ faLock } size={24} style={styles.icon} /> 
+                <FontAwesomeIcon icon={locked ? faLock : faUnlockAlt } size={24} style={styles.icon} /> 
                 </View>
                 </TouchableOpacity>
             </View>
