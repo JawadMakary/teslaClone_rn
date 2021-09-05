@@ -1,5 +1,5 @@
 import React from 'react'
-import { StyleSheet, Text, View,ImageBackground,Image } from 'react-native'
+import { StyleSheet, Text, View,ImageBackground,Image,TouchableOpacity } from 'react-native'
 import  styles from './styles'
 
  import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome'
@@ -12,9 +12,15 @@ export default function CarItem() {
             style={styles.backgroundImage}
             />
             <View style={styles.header}>
+                <TouchableOpacity> 
              <FontAwesomeIcon icon={ faCog } size={24} style={styles.icon} /> 
+             </TouchableOpacity>
                <Text style={styles.headerTitle}>Model X</Text>
+               <TouchableOpacity>
+
+              
                <FontAwesomeIcon icon={ faToolbox } size={24} style={styles.icon}  />
+               </TouchableOpacity>
             </View>
             <View style={styles.batterySection}>
                 <Image source={require('../../images/battery.png')}
