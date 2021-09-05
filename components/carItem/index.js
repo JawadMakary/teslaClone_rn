@@ -3,7 +3,7 @@ import { StyleSheet, Text, View,ImageBackground,Image,TouchableOpacity } from 'r
 import  styles from './styles'
 
  import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome'
- import { faCog, faToolbox } from '@fortawesome/free-solid-svg-icons'
+ import { faCog, faFan, faKey, faLock, faToolbox } from '@fortawesome/free-solid-svg-icons'
 
 export default function CarItem() {
     return (
@@ -37,7 +37,25 @@ export default function CarItem() {
                     Parked
                 </Text>
             </View>
+            <View style={styles.controls}>
+            <TouchableOpacity>
+                <View style={styles.controlsButton}>
+                   
+                <FontAwesomeIcon icon={ faFan } size={24} style={styles.icon} /> 
 
+                </View>
+                </TouchableOpacity>
+                <TouchableOpacity>
+                <View style={styles.controlsButton}>
+                <FontAwesomeIcon icon={ faKey } size={24} style={styles.icon} /> 
+                </View>
+                </TouchableOpacity>
+                <TouchableOpacity>
+                <View style={styles.controlsButton}>
+                <FontAwesomeIcon icon={ faLock } size={24} style={styles.icon} /> 
+                </View>
+                </TouchableOpacity>
+            </View>
         </View>
     )
 }
