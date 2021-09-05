@@ -13,7 +13,8 @@ import { StyleSheet } from 'react-native'
         marginRight:20,
         flexDirection:'row',
         justifyContent:'space-between',
-        alignItems:'center'
+        alignItems:'center',
+        marginBottom:10,
     },
     headerTitle:{
         color:'white',
@@ -30,6 +31,23 @@ import { StyleSheet } from 'react-native'
         height:'100%',
         resizeMode:'cover',
         position:'absolute'
+    },
+    batterySection:{
+        flexDirection:'row',
+        alignItems:'center',
+        justifyContent:'center',
+    },
+    batteryImage:{
+        width:70,
+        height:26,
+        marginRight:12,
+
+    },
+    batteryText:{
+        color:'white',
+        fontSize:35,
+        fontWeight:'bold',
+
     }
 })
 export default styles;

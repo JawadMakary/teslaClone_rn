@@ -1,5 +1,5 @@
 import React from 'react'
-import { StyleSheet, Text, View,ImageBackground } from 'react-native'
+import { StyleSheet, Text, View,ImageBackground,Image } from 'react-native'
 import  styles from './styles'
 
  import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome'
@@ -16,6 +16,17 @@ export default function CarItem() {
                <Text style={styles.headerTitle}>Model 3</Text>
                <FontAwesomeIcon icon={ faToolbox } size={24} style={styles.icon}  />
             </View>
+            <View style={styles.batterySection}>
+                <Image source={require('../../images/battery.png')}
+                style={styles.batteryImage}
+                />
+                <Text style={styles.batteryText}>
+                    150 mi
+                </Text>
+                
+                
+            </View>
+
         </View>
     )
 }
