@@ -1,6 +1,4 @@
 import { StyleSheet } from 'react-native'
-
-
   const styles = StyleSheet.create({
     menuItems:{
       marginTop:20,
@@ -28,8 +26,12 @@ import { StyleSheet } from 'react-native'
     },
     arrowIcon:{
       color:'#4d4d4e'
+    },
+    subTitle:{
+      color:'grey',
+      fontSize:14,
+      marginLeft:15,
     }
-    
   })
 
   export default styles;

@@ -1,5 +1,5 @@
 import React,{useState} from 'react'
-import { StyleSheet, Text, View,ImageBackground,Image,TouchableOpacity } from 'react-native'
+import { ScrollView, Text, View,ImageBackground,Image,TouchableOpacity } from 'react-native'
 import  styles from './styles'
  import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome'
  import { faCog, faFan, faKey, faLock, faToolbox,  faUnlockAlt } from '@fortawesome/free-solid-svg-icons'
@@ -37,6 +37,7 @@ export default function CarItem() {
                     Parked
                 </Text>
             </View>
+            <ScrollView>
             <View style={styles.controls}>
             <TouchableOpacity>
                 <View style={styles.controlsButton}>
@@ -56,7 +57,9 @@ export default function CarItem() {
                 </View>
                 </TouchableOpacity>
             </View>
+            
             <Menu />
+            </ScrollView>
         </View>
     )
 }
