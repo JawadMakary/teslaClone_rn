@@ -48,6 +48,14 @@ import { StyleSheet } from 'react-native'
         fontSize:35,
         fontWeight:'bold',
 
+    },
+    status:{
+        alignItems:'center',
+    },
+    statusText:{
+        color:'white',
+        fontSize:20,
+        fontWeight:'bold',
     }
 })
 export default styles;

@@ -13,7 +13,7 @@ export default function CarItem() {
             />
             <View style={styles.header}>
              <FontAwesomeIcon icon={ faCog } size={24} style={styles.icon} /> 
-               <Text style={styles.headerTitle}>Model 3</Text>
+               <Text style={styles.headerTitle}>Model X</Text>
                <FontAwesomeIcon icon={ faToolbox } size={24} style={styles.icon}  />
             </View>
             <View style={styles.batterySection}>
@@ -25,6 +25,11 @@ export default function CarItem() {
                 </Text>
                 
                 
+            </View>
+            <View style={styles.status}>
+                <Text style={styles.statusText}>
+                    Parked
+                </Text>
             </View>
 
         </View>
